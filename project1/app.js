@@ -1,7 +1,20 @@
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="./img/panda.png" width='200px'></img>
+                <ul>
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
 function Facts() {
     return (
         <div>
-            <img src="./img/panda.png" width='200px'></img>
             <h1>Fun facts about React</h1>
             <ul>
                 <li>Was first released in 2013</li>
@@ -11,14 +24,29 @@ function Facts() {
                 <li>Powers thousands of enterprise apps, including mobile apps</li>
             </ul>
         </div>
+    )
+}
+function Footer() {
+    return (
+        <footer>
+            <small>© 2022 Hewad development All rights reserved.</small>
+        </footer>
+    )
+}
 
+function Page() {
+    return (
+        <div>
+            <Header />
+            <Facts />
+            <Footer />
+        </div>
     )
 }
 
 ReactDOM.render(
     <div>
-        <Facts />
-
+        <Page />
     </div>,
     document.getElementById('root')
 )
