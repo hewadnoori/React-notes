@@ -58,3 +58,20 @@ button.pink {
   background-color: #e83e8c;
   color: #fff
 }
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(.98);
+  box-shadow: none;
+}
+
+button.pill {
+  border-radius: 15px;
+}
+
+button.lg {
+  padding: .5rem 1.2rem;
+}

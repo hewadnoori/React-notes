@@ -1,7 +1,7 @@
 import React from 'react'
-function Button(color) {
+function Button({ type, text }) {
     return (
-        <button className='color'>Button</button>
+        <button className={type}>{text}</button>
     )
 }
 
