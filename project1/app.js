@@ -1,17 +1,4 @@
-function Header() {
-    return (
-        <header>
-            <nav>
-                <img src="./img/panda.png" width='200px'></img>
-                <ul>
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
+import { Header } from "./Header";
 function Facts() {
     return (
         <div>

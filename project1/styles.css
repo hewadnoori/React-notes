@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(39, 150, 144);
+    align-content: center;
+    color: white;
+}
+
+.navigation img {
+    border-radius: 50%;
+    align-self: center;
+    width: 100px;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-items li {
+    align-self: center;
+    padding: 20px;
+}
