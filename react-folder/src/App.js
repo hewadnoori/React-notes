@@ -12,8 +12,9 @@ function App() {
         <Button text="html" type="pill lg" />
         <Button text="Bootstrap" type="btn btn-primary" />
         <Btn type="button" className="primary" text="refined" />
-        <StBtn />
-        <h1>My App</h1>
+        <StBtn type="indigo" text="indigo" />
+        <StBtn type="orange" text="orange" />
+        <StBtn type="brown" text="brown" />
       </header>
     </div>
   );
