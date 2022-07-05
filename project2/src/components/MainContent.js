@@ -1,13 +1,22 @@
 import React from "react";
-
+import img from "../reactjs-icon-2.png"
 export default function MainContent() {
     return (
-        <div>
-            <h1>Reasons I'm excited to learn React</h1>
-            <ol>
-                <li>It's a popular library, so I'll be able to fit in with the cool kid's</li>
-                <li>I'm more likely to get a job as a developer if i know React</li>
-            </ol>
+        <div className="main-content">
+            <div>
+                <h1>Fun facts about React</h1>
+                <ul>
+                    <li>Was first released in 2013</li>
+                    <li>Was originally created by Jordan Walke</li>
+                    <li>Has well over 100k stars on GitHub</li>
+                    <li>Is maintained by Facebook</li>
+                    <li>Powers thousands of enterprise apps, including mobile apps</li>
+                </ul>
+            </div>
+
+            <div>
+                <img src={img} alt="react logo"></img>
+            </div>
         </div>
     )
 }

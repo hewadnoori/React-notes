@@ -32,7 +32,57 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+nav {
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 200px 200px;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  background-color: #21222A;
+}
+
+nav p {
+  color: white;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #61DAFB;
+}
+
+.main-content {
+  background-color: #282D35;
+  color: white;
+  padding: 57px 0 0 27px;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.main-content ul {
+  list-style: none;
+
+}
+
+.main-content ul li::before {
+  content: "\2022";
+  color: #61DAFB;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+footer {
+  background-color: #282D35;
+  color: white;
 }

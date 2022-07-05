@@ -4,12 +4,14 @@ function Header() {
     return (
         <header>
             <nav>
-                <img src={logo} className="App-logo" alt="react-logo" width={100}></img>
-                <ul>
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
+                <div className="header-logo">
+                    <img src={logo} className="App-logo" alt="react-logo" width={100}></img>
+                    <h3>ReactFacts</h3>
+                </div>
+
+                <div>
+                    <p>React Course - Project 1</p>
+                </div>
             </nav>
         </header >
     );

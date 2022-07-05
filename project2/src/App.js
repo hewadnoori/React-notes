@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import MainContent from './components/MainContent';
 function App() {
   return (
-    <div className='container'>
+    <div className='content'>
       <Header />
       <MainContent />
       <Footer />
