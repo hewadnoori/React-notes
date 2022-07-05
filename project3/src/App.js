@@ -14,8 +14,8 @@ export default function App() {
                     <h3>Frontend Developer</h3>
                     <p>laurasmith.website</p>
                     <div className='buttons'>
-                        <a href="https://google.com/" target="_blank"><button className='email'>Email</button></a>
-                        <a href="https://google.com/" target="_blank"><button className='linkedin'>LinkedIn</button></a>
+                        <a href="https://google.com/" target="_blank" rel="noreferrer"><button className='email'>Email</button></a>
+                        <a href="https://google.com/" target="_blank" rel="noreferrer"><button className='linkedin'>LinkedIn</button></a>
                     </div>
                 </div>
                 <div className='info-about'>
@@ -27,10 +27,10 @@ export default function App() {
 
             </div>
             <div className='social'>
-                <a href="https://google.com/" target="_blank"><img src={twitter}></img></a>
-                <a href="https://google.com/" target="_blank"><img src={facebook}></img></a>
-                <a href="https://google.com/" target="_blank"><img src={instagram}></img></a>
-                <a href="https://google.com/" target="_blank"><img src={github}></img></a>
+                <a href="https://google.com/" target="_blank" rel="noreferrer"><img src={twitter} alt="twitter"></img></a>
+                <a href="https://google.com/" target="_blank" rel="noreferrer"><img src={facebook} alt="facebook"></img></a>
+                <a href="https://google.com/" target="_blank" rel="noreferrer"><img src={instagram} alt="instagram"></img></a>
+                <a href="https://google.com/" target="_blank" rel="noreferrer"><img src={github} alt="github"></img></a>
             </div>
 
         </div>
