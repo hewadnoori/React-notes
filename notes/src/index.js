@@ -1,31 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import {books} from './components/books' 
 //css
 import './index.css'
-
+import BookBook from './components/book'
 //vars
-const author = 'Christopher Denise';
-const title = 'Knight Owl Kindle Edition';
-const img = 'https://m.media-amazon.com/images/I/519mfvpS89S.jpg';
+
+
 function BookList() {
   return (
     <section className="booklist">
-      <Book title='little' author="sdad" job="developer"/>
-      <Book title="random title" number={22}/>
+    {books.map((book)=>{
+      const {img, title, author} = book;
+      return(
+        <BookBook key={book.id} {...book}></BookBook>
+      );
+        
+      // return(  
+      //   <div>
+      //     <img src={book.img} alt="" />
+      //     <h1>{book.title}</h1>
+      //     <h4>{book.author}</h4>
+      //   </div> 
+      // );
+    })}
     </section>
   );
-};
-
-const Book = (props) => {
-    return (
-        <article className="book">
-            <img src={props.img} alt="" />
-            <h1>{props.title}</h1>
-            <h4>{props.author}</h4>
-            <p>{props.job}</p>
-            <p>{props.number}</p>
-        </article>
-    );
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
